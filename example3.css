@@ -38,6 +38,7 @@ a {
 }
 .one{
     height: 95vh;
+    background-color: yellow;
 }
 .one img{
   object-fit: fill;
