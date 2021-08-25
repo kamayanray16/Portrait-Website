@@ -37,7 +37,7 @@ a {
   max-width: 1400px;
 }
 .one{
-    height: 70vh;
+    /* height: 70vh; */
 }
 .one img{
   object-fit: fill;
@@ -166,6 +166,6 @@ h4 {
     margin:0 30px;
   }
   .one{
-    height: 95px;
+    height: 95vh;
 }
 }
