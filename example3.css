@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: radial-gradient(#fff, #ffd6d6);
+  }
+  .navbar {
+    display: flex;
+  }
+  nav {
+      flex: 1;
+      text-align: right;
+    }
+    nav ul {
+      display: inline-block;
+      list-style-type: none;
+    }
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: #555;
+    }
+  
+  .container {
+    max-width: 1300px;
+    margin: 10px auto;
+  }
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  
+  .mainPic {
+    width: 100%;
+    height: 95vh;
+    background-color: yellow;
+  }
+  .box {
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-items: flex-start;
+  }
+  .sub-box {
+    /* box-shadow: 0px 0px 10px 3px rgb(255, 0, 64); */
+    height: 400px;
+    border-radius: 20px;
+    background-color: red;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border: 2px solid black;
+    transition: tranform 0.5s;
+  }
+  
+  
+  h1 {
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .b {
+    height: 350px;
+  }
+  .offer {
+    margin: auto 30px;
+    border-radius: 20px;
+    max-width: 1300px;
+    height: 300px;
+    background-color: orangered;
+  }
+  
+  .testi {
+    max-width: 1180px;
+    /* background-color: gainsboro; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* margin: 30px auto; */
+    margin-bottom: 60px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .t1 {
+    box-shadow: 0px 0px 20px 5px grey;
+    margin: 20px;
+    height: 350px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    /* background-color: gold; */
+  }
+  .t1 img {
+    margin-left: 33%;
+    margin-top: 10px;
+    height: 120px;
+    width: 120px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .t1:hover {
+    border: 3px solid grey;
+  }
+  .t1 h4 {
+    color: black;
+    text-align: center;
+    margin: 15px;
+  }
+  .footer {
+    background-color: black;
+    height: 300px;
+    max-width: 100%;
+  }
+  h4 {
+    color: wheat;
+  }
+  
+  
+  @media (min-width: 500px) {
+    .box {
+      display: flex;
+      margin-bottom: 70px;
+    }
+    .sub-box {
+      height: 350px;
+      flex-basis: 30%;
+      margin-bottom: 0px;
+    }
+    .sub-box:hover{
+      transform: translateY(-15px);
+    }
+    .b {
+      height: 280px;
+      border-radius: 10%;
+    }
+  
+    .testi {
+      display: flex;
+    }
+    .t1 {
+      flex-basis: 30%;
+    }
+    .container h2 {
+      text-align: center;
+    }
+    .c {
+      justify-content: space-evenly;
+    }
+   
+  
+    
+  }
+  
