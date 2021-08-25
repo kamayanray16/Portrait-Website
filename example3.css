@@ -8,7 +8,7 @@ body {
 }
 .navbar {
   display: flex;
- 
+ margin: 0 10px;
 }
 nav {
   flex: 1;
@@ -37,8 +37,7 @@ a {
   max-width: 1400px;
 }
 .one{
-    height: 95vh;
-    background-color: yellow;
+    height: 70vh;
 }
 .one img{
   object-fit: fill;
@@ -166,4 +165,7 @@ h4 {
   .navbar{
     margin:0 30px;
   }
+  .one{
+    height: 95px;
+}
 }
