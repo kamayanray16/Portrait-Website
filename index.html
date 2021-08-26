@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="example3.css" />
+    <script src="app.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -17,6 +18,9 @@
           </li>
           <li class="nav-items">
             <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-items">
+            <a href="#" class="nav-link">Products</a>
           </li>
           <li class="nav-items">
             <a href="#" class="nav-link">Contact</a>
@@ -107,12 +111,13 @@
 
     <!--Our Works-->
     <div class="container">
-      <h2>Products</h2>
+      <h2 class="title">PRODUCTS</h2>
 
       <div class="box">
         <div class="sub-box a">
           <img src="evans.jpeg" alt="" />
         </div>
+       
         <div class="sub-box a">
           <img src="ronaldo.jpeg" alt="" />
         </div>
@@ -134,7 +139,7 @@
     </div>
 
     <!--Categories-->
-    <h1>Customized</h1>
+    <h2 class="title C">CUSTOMIZE</h2>
     <div class="container">
       <div class="box c">
         <div class="sub-box b">
@@ -155,12 +160,13 @@
     </div>
 
     <!--Offer-->
+    <h2 class="title O">OFFERS</h2>
     <div class="offer">
-      <h3>offer</h3>
+      
     </div>
 
     <!--Testimonial-->
-    <h1>Testimonial</h1>
+    <h2 class="title T">TESTIMONIAL</h2>
     <div class="testi">
       <div class="t1">
         <img src="user-2.png" alt="" />
@@ -201,29 +207,8 @@
       </div>
       <div class="logo"></div>
     </div>
-    <!--js for toggle menu-->
+    
 
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navMenu = document.querySelector(".nav-menu");
-
-      hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      });
-
-      document.querySelectorAll(".nav-link").forEach((n) =>
-        n.addEventListener("click", () => {
-          hamburger.classList.remove("active");
-          navMenu.classList.remove("active");
-        })
-      );
-
-      const logo = document.querySelectorAll("#logo path");
-
-      for (let i = 0; i < logo.length; i++) {
-        console.log(`Letter ${i} is ${logo[i].getTotalLength()}`); //To calculate tatal lenght of letter
-      }
-    </script>
+    
   </body>
 </html>
