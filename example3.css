@@ -55,16 +55,14 @@ a {
   box-sizing: border-box;
 }
 
-
 .intro {
-    background: radial-gradient(#fff, #ffd6d6);
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  background: radial-gradient(#fff, #ffd6d6);
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #logo {
   position: absolute;
@@ -110,24 +108,24 @@ a {
 }
 
 @keyframes line-anim {
-    to{
-        stroke-dashoffset: 0;
-    }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 @keyframes fill {
-    from{
-        fill: transparent;
-    }
-    to{
-        fill: black;
-    }
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: black;
+  }
 }
 
-@media (max-width: 700px){
-    #logo{
-      width: 300px;
-    }
+@media (max-width: 700px) {
+  #logo {
+    width: 300px;
   }
+}
 
 @media (max-width: 700px) {
   .hamburger {
@@ -195,23 +193,22 @@ a {
 .one img {
   object-fit: fill;
 }
-h2{
+h2 {
   font-size: 2.7rem;
   text-align: center;
   margin-bottom: 50px;
-  
 }
-.C{
+.C {
   margin-top: -20px;
 }
-.T{
+.T {
   margin-top: 50px;
 }
-.O{
+.O {
   margin-top: -40px;
 }
-.title::after{
-  content: '';
+.title::after {
+  content: "";
   background: black;
   width: 220px;
   height: 5px;
@@ -223,23 +220,50 @@ h2{
   /* transform: translateX(-50%); */
 }
 .box {
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 40px;
   margin-right: 20px;
   margin-left: 20px;
   align-items: flex-start;
 }
 .sub-box {
-  /* box-shadow: 0px 0px 10px 3px rgb(255, 0, 64); */
-  height: 400px;
+  height: 450px;
   border-radius: 20px;
-  background-color: red;
+  padding: 3%;
   overflow: hidden;
   margin-bottom: 40px;
-  border: 2px solid black;
+  box-shadow: 0px 0px 20px 5px grey;
   transition: tranform 0.5s;
 }
+.sub-box img {
+  height: 75%;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.details {
+  border: 2px solid black;
+  height: 23%;
+  margin-top: 1%;
+  border-radius: 10px;
+}
+.details h3 {
+  text-align: center;
+}
+.details p {
+  text-align: center;
+}
 
+.details button {
+  margin-left: 35%;
+  height: 40%;
+  width: 30%;
+  margin-top: 3%;
+  background: #fff3f3;
+  color: #030303;
+  box-shadow: 0px 0px 15px 3px grey;
+  border: 2px dotted black;
+  cursor: pointer;
+}
 h1 {
   text-align: center;
 }
@@ -249,8 +273,10 @@ img {
   object-fit: cover;
 }
 .b {
-  height: 350px;
+  height: 450px;
+  border-radius: 20px;
 }
+
 .offer {
   margin: auto 30px;
   border-radius: 20px;
@@ -306,7 +332,7 @@ h4 {
 }
 
 @media (min-width: 900px) {
-  .intro{
+  .intro {
     height: 100vh;
   }
   .box {
@@ -314,16 +340,26 @@ h4 {
     margin-bottom: 70px;
   }
   .sub-box {
-    height: 350px;
-    flex-basis: 30%;
+    height: 500px;
+    flex-basis: 35%;
     margin-bottom: 0px;
+    padding: 1%;
   }
   .sub-box:hover {
     transform: translateY(-15px);
   }
   .b {
-    height: 280px;
-    border-radius: 10%;
+    height: 400px;
+  }
+  .b img{
+    height: 70%;
+  }
+  .b .details{
+    height: 28%;
+  }
+  .details button {
+    width: 20%;
+    margin-left: 40%;
   }
 
   .testi {
@@ -345,10 +381,10 @@ h4 {
   .one {
     height: 95vh;
   }
-  .T{
+  .T {
     margin-top: 5%;
   }
-  h2{
+  h2 {
     margin-top: 20px;
   }
 }
