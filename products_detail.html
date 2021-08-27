@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="product-details.css" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <!-- <img src="evans.jpeg" /> -->
+        <div class="q">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <img src="evans.jpeg" class="swiper-slide" />
+              <img src="ronaldo.jpeg" class="swiper-slide" />
+              <img src="srk.jpeg" class="swiper-slide" />
+              <div id="btn1" class="swiper-button-prev"></div>
+              <div id="btn2" class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box two">
+        <div class="details">
+          <h2>PRODUCT 1</h2>
+          <h3 id="price">Rs100</h3>
+          <select id="select" onchange="myFunc()">
+            <option value="100">100cm</option>
+            <option value="200">200cm</option>
+            <option value="300">300cm</option>
+            <option value="400">400cm</option>
+          </select>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            doloribus suscipit aliquam nemo soluta ea voluptas perspiciatis
+            odit, consectetur ullam doloremque enim, maiores nulla ducimus
+            molestiae, esse tenetur eaque alias?
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const myFunc = () => {
+        const selected = document.getElementById("select").value;
+        document.getElementById("price").innerHTML = `Rs${selected}`;
+      };
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
